@@ -10,5 +10,9 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  titulo= 'Calculadora con Angular';
+  private titulo= 'Calculadora con Angular';
+
+  get mostrarTitulo(){
+    return this.titulo
+  }
 }
