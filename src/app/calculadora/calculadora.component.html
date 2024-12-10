@@ -1,0 +1,37 @@
+<div class="container ">
+
+    <form action="" class="">
+        <div class="">
+            <label for="" class="">operando A</label>
+            <input type="number" name="operandoA" class="mt-4 mx-2" [(ngModel)]="operandoA"
+                placeholder="escribe el operando">
+
+        </div>
+        <div class="">
+            <label for="operandoB" class="">operando B</label>
+            <input type="number" name="operandoB" class="mt-4 mx-2" [(ngModel)]="operandoB"
+                placeholder="escribe el operando">
+
+        </div>
+        <div class="mt-4">
+            <button type="button" class="btn btn-light mx-3 mt-2" (click)="sumar()">sumar</button>
+            <button type="button" class="btn btn-light mx-3 mt-2" (click)="restar()">restar</button>
+            <button type="button" class="btn btn-light mx-3 mt-2" (click)="multiplicar()">multiplicar</button>
+            <button type="button" class="btn btn-light mx-3 mt-2" (click)="dividir()">dividir</button>
+            <button type="button" class="btn btn-danger mx-3 mt-2" (click)="borra()">borrar</button>
+        </div>
+
+
+
+
+    </form>
+
+
+    <label for="replica de resultado" class="mt-4 mx-2"><b>Resultado</b></label>
+    <!-- Replicando resultado con Property Binding [value]-->
+    <input type="number" [value]="resultado" />
+
+    <!-- usando interpolacion con {{}}-->
+    <p class="mt-4"><b>resultado replicado {{resultado}}</b></p>
+
+</div>
