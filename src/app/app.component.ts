@@ -11,8 +11,8 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
 })
 export class AppComponent {
   private titulo= 'Calculadora con Angular';
-
-  get mostrarTitulo(){
+  // realizando encapsulamiento de datos
+   get mostrarTitulo(){
     return this.titulo
   }
 }
